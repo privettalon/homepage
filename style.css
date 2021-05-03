@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+section
+{
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   padding: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #FFF5EE;
+}
+header
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+header p 
+{
+   font-size: 1.6em;
+   font-weight: 900;
+}
+
+
+header .logo
+{
+   position: relative;
+   max-width: 80px;
+}
+
+
+header ul
+{
+   position: relative;
+   display: flex;
+}
+header ul  li
+{
+   list-style: none;
+}
+
+header ul  li a 
+{
+   display: inline-block;
+   color: #333;
+
+   font-weight: 400;
+   margin-left:  40px;
+   text-decoration: none;
+}
+
+.content 
+{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.content .textBox 
+{
+   position: relative;
+   max-width: 700px;
+}
+
+.content .textBox h2
+{
+   color: #333;
+   font-size: 2.3em;
+   line-height: 1.4em;
+   font-weight: 500;
+}
+
+.content .textBox h2 span
+{
+   color: #ff1a1a;
+   font-size: 1.4em;
+   font-weight: 900;
+}
+
+.content .textBox p 
+{
+   margin-top: 30px;
+   color: #333;
+}
+
+.content .textBox p span
+{
+
+   font-size: 1.4em;
+   font-weight: 700;
+}
+.content .textBox a
+{
+   display: inline-block;
+   margin-top: 20px;
+   padding: 8px 20px;
+   background: #ff1a1a;
+   color: #FFF5EE;
+   border-radius: 40px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-decoration: none;
+
+}
+.content .imgBox 
+{
+   width: 600px;
+   display: flex;
+   justify-content: flex-end ;
+   padding-right: 100px;
+   margin-top: 50px;
+}
+
+.content .imgBox img
+{
+   max-width: 400px;
+}
+
+.socialMedia
+{
+   position: absolute;
+   top: 50%;
+   right: 30px;
+   transform: translateY(-50%);
+   display: flex;
+   align-self: center;
+   flex-direction: column;
+}
+
+.socialMedia li
+{
+   list-style: none;
+}
+
+.socialMedia li a 
+{
+   display: inline-block;
+   margin: 5px 0;
+   transform: scale(0.6);
+   filter: invert();
+}
+
+.socialMedia li a img
+{
+   width: 40px;
+}
+
+.circle
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:#ff1a1a;
+   clip-path: circle(650px at right 100%);
+}
+
+@media(max-width:1088px)
+{
+   header {
+      padding: 20px;
+   }
+   header .logo {
+      position: relative;
+      max-width: 80px;
+   }
+   header p{
+      font-size: 1.5em;
+      font-weight: 900;
+      margin-left: 20px;
+      width: 100%;
+   }
+   header ul{
+      display: none;
+   }
+   .toggle 
+   {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background: url(image/menu.png);
+      background-size: 30px;
+      background-position: center ;
+      background-repeat: no-repeat;
+      filter: invert();
+      z-index: 11;
+   }
+   .toggle.active{
+      background: url(image/close.png);
+      background-size: 25px;
+      background-position: center ;
+      background-repeat: no-repeat;
+   }
+   header ul.navigation.active{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #FFF5EE;
+      z-index: 10;
+   }
+
+   section {
+      padding: 20px
+      
+   }
+   .content
+   {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .content .textBox h2 {
+      font-size: 2.0em;
+   }
+
+   
+
+  .content .textBox p span
+   {
+
+      font-size: 1.2em;
+      font-weight: 700;
+   }
+
+  .circle
+  {
+   clip-path: circle(400px at center bottom);
+  }
+  .selection
+  {
+     padding: 20px 20px 120px;
+  }
+  .content .imgBox
+  {
+     width: 100%;
+     justify-content: center;
+  }
+  .content .imgBox img {
+   margin-left: 55px;
+   max-width: 350px;
+   }
+
+   .socialMedia 
+   {
+      background: #ff1a1a;
+      right: 0;
+      width: 30px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+   }
+   .socialMedia li a img {
+      width: 30px;
+  }
+  #about {
+     padding: 20px ;
+    
+  }
+  .aboutContent {
+   width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+.aboutContent .text{
+width: 100%;
+max-width: 100%;
+padding: 50px 80px 100px 80px;
+
+}
+}
