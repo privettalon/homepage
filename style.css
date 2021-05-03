@@ -62,3 +62,113 @@ header ul  li a
    margin-left:  40px;
    text-decoration: none;
 }
+
+.content 
+{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.content .textBox 
+{
+   position: relative;
+   max-width: 700px;
+}
+
+.content .textBox h2
+{
+   color: #333;
+   font-size: 2.3em;
+   line-height: 1.4em;
+   font-weight: 500;
+}
+
+.content .textBox h2 span
+{
+   color: #ff1a1a;
+   font-size: 1.4em;
+   font-weight: 900;
+}
+
+.content .textBox p 
+{
+   margin-top: 30px;
+   color: #333;
+}
+
+.content .textBox p span
+{
+
+   font-size: 1.4em;
+   font-weight: 700;
+}
+.content .textBox a
+{
+   display: inline-block;
+   margin-top: 20px;
+   padding: 8px 20px;
+   background: #ff1a1a;
+   color: #FFF5EE;
+   border-radius: 40px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-decoration: none;
+
+}
+.content .imgBox 
+{
+   width: 600px;
+   display: flex;
+   justify-content: flex-end ;
+   padding-right: 100px;
+   margin-top: 50px;
+}
+
+.content .imgBox img
+{
+   max-width: 400px;
+}
+
+.socialMedia
+{
+   position: absolute;
+   top: 50%;
+   right: 30px;
+   transform: translateY(-50%);
+   display: flex;
+   align-self: center;
+   flex-direction: column;
+}
+
+.socialMedia li
+{
+   list-style: none;
+}
+
+.socialMedia li a 
+{
+   display: inline-block;
+   margin: 5px 0;
+   transform: scale(0.6);
+   filter: invert();
+}
+
+.socialMedia li a img
+{
+   width: 40px;
+}
+
+.circle
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:#ff1a1a;
+   clip-path: circle(650px at right 100%);
+}
