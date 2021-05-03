@@ -8,6 +8,7 @@ My very own personal website. Basically this is just a résumé.
 # Links 🔗
 - [GitHub Pages](https://privettalon.github.io/homepage/)
 - [Amazon s3](http://kovalchukdmytro-staging.s3-website.eu-central-1.amazonaws.com/)
+- [Vercel](https://homepage-five-rho.vercel.app/)
 
 🧙Hocus-pocus!
 
