@@ -323,6 +323,52 @@ header ul  li a
     font-size: 2em;
  }
 
+ #Biden{
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   background: #ff1a1a;
+   padding-top: 0px;
+   color: #333;
+   
+}
+.message{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   position: absolute;
+   margin-top: 100px;
+   align-items: center;
+}
+.message h1{
+   font-size: 3em;
+}
+
+.message p{
+   margin-top: 300px;
+   font-size: 6em;
+   font-weight: 700;
+   color:#ff1a1a;
+}
+.message p:hover{
+   margin-top: 250px;
+   font-size: 10em;
+   font-weight: 700;
+   color:#FFF5EE;
+}
+
+
+
+.thirdCircle{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:#FFF5EE;
+   clip-path: circle(400px at center 0px);
+}
+
 
 @media(max-width:1088px)
 {
@@ -466,6 +512,14 @@ padding: 50px 80px 100px 80px;
 #card{
    width: 200px;
     height: 250px;
+}
+
+.message p:hover {
+   font-size: 5em;
+   
+}
+.message h1 {
+   font-size: 2.4em;
 }
 
 }
