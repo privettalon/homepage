@@ -243,6 +243,86 @@ header ul  li a
 }
 
 
+#miniGame{
+   padding: 100px 60px 20px;
+  
+   flex-direction: column;
+}
+
+.advertisement{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   color: #333;
+}
+.advertisement h2{
+   font-size: 4em;
+}
+.advertisement p{
+   margin-top: 20px;
+
+}
+.cards {
+   width: 100%;
+   height: 80vh;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#card {
+   position: relative;
+   width: 300px;
+   height: 350px;
+   transform-style: preserve-3d;
+}
+
+#card .face{
+   position: absolute;
+   top: 0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   transition: 0.8s;
+   
+
+}
+#card .face.front{
+   background: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   transform-origin: bottom;
+   
+
+}
+#card:hover .face.front{
+   transform: translateY(-100%) rotateX(90deg);
+
+}
+
+#card .face.back{
+   background: #ff1a1a;
+   color:#FFF5EE;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   transform-origin: top;
+   transform: translateY(100%) rotateX(90deg);
+   
+}
+
+#card:hover .face.back{
+
+   transform: translateY(0) rotateY(0deg);
+}
+ #card .face h1{
+    font-size: 2em;
+ }
+
 
 @media(max-width:1088px)
 {
@@ -381,6 +461,11 @@ padding: 50px 80px 100px 80px;
 }
 .advertisement h2 {
    font-size: 3em;
+}
+
+#card{
+   width: 200px;
+    height: 250px;
 }
 
 }
