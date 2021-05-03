@@ -173,6 +173,203 @@ header ul  li a
    clip-path: circle(650px at right 100%);
 }
 
+
+.secondcircle
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:#FFF5EE;
+   clip-path: circle(650px at right 0);
+}
+
+
+#about{
+   padding: 100px 60px 20px;
+   background: #ff1a1a;
+}
+
+.aboutContent 
+{
+   width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+}
+
+   .aboutContent .title{
+      position: relative;
+      max-width: 700px;
+   }
+
+   .aboutContent .text
+{
+   position: relative;
+   max-width: 700px;
+}
+
+   .aboutContent .text h2
+{
+   color: #FFF5EE;
+   font-size: 2.3em;
+   line-height: 1.4em;
+   font-weight: 500;
+}
+
+.aboutContent .text h2 span
+{
+   color: #333;
+   font-size: 1.4em;
+   font-weight: 900;
+}
+
+.aboutContent .text p 
+{
+   
+   margin-top: 30px;
+   color: #333;
+}
+
+.aboutContent .text p span
+{
+
+   font-size: 1.4em;
+   font-weight: 700;
+}
+.aboutContent .aboutImgBox {
+   max-height: 500px;
+}
+
+
+#miniGame{
+   padding: 100px 60px 20px;
+  
+   flex-direction: column;
+}
+
+.advertisement{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   color: #333;
+}
+.advertisement h2{
+   font-size: 4em;
+}
+.advertisement p{
+   margin-top: 20px;
+
+}
+.cards {
+   width: 100%;
+   height: 80vh;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#card {
+   position: relative;
+   width: 300px;
+   height: 350px;
+   transform-style: preserve-3d;
+}
+
+#card .face{
+   position: absolute;
+   top: 0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   transition: 0.8s;
+   
+
+}
+#card .face.front{
+   background: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   transform-origin: bottom;
+   
+
+}
+#card:hover .face.front{
+   transform: translateY(-100%) rotateX(90deg);
+
+}
+
+#card .face.back{
+   background: #ff1a1a;
+   color:#FFF5EE;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   transform-origin: top;
+   transform: translateY(100%) rotateX(90deg);
+   
+}
+
+#card:hover .face.back{
+
+   transform: translateY(0) rotateY(0deg);
+}
+ #card .face h1{
+    font-size: 2em;
+ }
+
+ #Biden{
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   background: #ff1a1a;
+   padding-top: 0px;
+   color: #333;
+   
+}
+.message{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   position: absolute;
+   margin-top: 100px;
+   align-items: center;
+}
+.message h1{
+   font-size: 3em;
+}
+
+.message p{
+   margin-top: 300px;
+   font-size: 6em;
+   font-weight: 700;
+   color:#ff1a1a;
+}
+.message p:hover{
+   margin-top: 250px;
+   font-size: 10em;
+   font-weight: 700;
+   color:#FFF5EE;
+}
+
+
+
+.thirdCircle{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:#FFF5EE;
+   clip-path: circle(400px at center 0px);
+}
+
+
 @media(max-width:1088px)
 {
    header {
@@ -295,4 +492,34 @@ max-width: 100%;
 padding: 50px 80px 100px 80px;
 
 }
+
+.secondcircle
+{
+   
+   clip-path: circle(400px at center 0);
+}
+.aboutContent .text h2{
+   font-size: 2em;
+   filter: invert();
+}
+.aboutContent .text h2 span{
+   filter: invert();
+}
+.advertisement h2 {
+   font-size: 3em;
+}
+
+#card{
+   width: 200px;
+    height: 250px;
+}
+
+.message p:hover {
+   font-size: 5em;
+   
+}
+.message h1 {
+   font-size: 2.4em;
+}
+
 }
