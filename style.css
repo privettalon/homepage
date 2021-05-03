@@ -173,6 +173,7 @@ header ul  li a
    clip-path: circle(650px at right 100%);
 }
 
+
 .secondcircle
 {
    position: absolute;
@@ -240,6 +241,7 @@ header ul  li a
 .aboutContent .aboutImgBox {
    max-height: 500px;
 }
+
 
 
 @media(max-width:1088px)
@@ -364,6 +366,7 @@ max-width: 100%;
 padding: 50px 80px 100px 80px;
 
 }
+
 .secondcircle
 {
    
@@ -379,4 +382,5 @@ padding: 50px 80px 100px 80px;
 .advertisement h2 {
    font-size: 3em;
 }
+
 }
