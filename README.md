@@ -10,5 +10,4 @@ My very own personal website. Basically this is just a résumé.
 - [Amazon s3](http://kovalchukdmytro-staging.s3-website.eu-central-1.amazonaws.com/)
 - [Vercel](https://homepage-five-rho.vercel.app/)
 
-🧙Hocus-pocus!
 
