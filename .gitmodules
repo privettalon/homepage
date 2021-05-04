@@ -1,0 +1,3 @@
+[submodule "dependencies/volodymyrkushnir.com"]
+	path = dependencies/volodymyrkushnir.com
+	url = https://github.com/volodymyr-kushnir/volodymyrkushnir.com.git
